@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color:#1b1f27;
+    overflow: hidden;
+}
+
+section#login{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 130px;
+    width: 400px;
+    height: 500px;
+    background-color: #181920;
+    border-radius: 15px;
+}
+
+section#login:hover{
+    border: 1px solid rgb(75, 98, 231);
+   
+}
+
+div#imagem {
+    display: flex;
+    margin: 2em 8.4em auto;
+    margin-bottom: 3em;
+    background-image: url(imagens/logoP.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 120px;
+
+}
+form{
+    width: 100%;
+    
+}
+
+div#formulario{
+    display: flex;
+    margin: 0em 2em;
+    margin-bottom: 4em;
+    
+}
+
+div#formulario > form > input{
+    padding: 19px;
+    margin: 9px;
+    width: 87%;
+    background-color:#252A34;
+    border-style: none;
+    border-radius: 5px;
+    color:rgba(255, 255, 255, 0.87);
+}
+
+input::placeholder{
+    color:rgba(240, 240, 240, 0.87) ;
+    font-size: 14px;
+}
+
+input.entrarBtn{
+    width: 100%;
+    font-weight:700;
+    font-size: 16px;
+}
+
+div#formulario > form > p{
+    margin-top: 1em;
+    color: rgba(255, 255, 255, 0.863);
+
+}
+
+a{
+    text-decoration: none;
+    color: rgb(75, 98, 231);
+}
+
+
+input.entrarBtn {
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+
+}
+
+
+
+@media (max-width:400px) {
+    section#login{
+        width: 85%;
+    }
+    
+    div#imagem{
+        margin: auto;
+        margin-bottom: 2.6em;
+    }
+
+    div#formulario > form > input{
+        width: 85%;
+        padding: 14px;
+        font-size: 12px;
+    }
+    div#formulario{
+        margin: 0em 1em;
+        margin-bottom: 4em;
+    }
+   
+}
