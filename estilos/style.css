@@ -10,6 +10,11 @@ body{
     overflow: hidden;
 }
 
+.hide{
+    display: none;
+}
+
+
 section#login{
     display: flex;
     text-align: center;
@@ -44,14 +49,14 @@ form{
     
 }
 
-div#formulario{
+div{
     display: flex;
     margin: 0em 2em;
     margin-bottom: 4em;
     
 }
 
-div#formulario > form > input{
+div > form#formulario > input{
     padding: 19px;
     margin: 9px;
     width: 87%;
@@ -72,7 +77,7 @@ input.entrarBtn{
     font-size: 16px;
 }
 
-div#formulario > form > p{
+div > form#formulario > p{
     margin-top: 1em;
     color: rgba(255, 255, 255, 0.863);
 
@@ -92,6 +97,17 @@ input.entrarBtn {
 }
 
 
+div > form#criar > input{
+    padding: 17px;
+    margin: 7px;
+    width: 87%;
+    background-color:#252A34;
+    border-style: none;
+    border-radius: 5px;
+    color:rgba(255, 255, 255, 0.87);
+}
+
+
 
 @media (max-width:400px) {
     section#login{
@@ -103,12 +119,12 @@ input.entrarBtn {
         margin-bottom: 2.6em;
     }
 
-    div#formulario > form > input{
+    div > form#formulario > input{
         width: 85%;
         padding: 14px;
         font-size: 12px;
     }
-    div#formulario{
+    div{
         margin: 0em 1em;
         margin-bottom: 4em;
     }
