@@ -23,7 +23,7 @@ section#login{
     margin: auto;
     margin-top: 130px;
     width: 400px;
-    height: 500px;
+    height: 600px;
     background-color: #181920;
     border-radius: 15px;
 }
@@ -36,7 +36,7 @@ section#login:hover{
 div#imagem {
     display: flex;
     margin: 2em 8.4em auto;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     background-image: url(imagens/logoP.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -52,7 +52,7 @@ form{
 div{
     display: flex;
     margin: 0em 2em;
-    margin-bottom: 4em;
+    margin-bottom: 2.8em;
     
 }
 
@@ -64,6 +64,9 @@ div > form#formulario > input{
     border-style: none;
     border-radius: 5px;
     color:rgba(255, 255, 255, 0.87);
+}
+div > form#formulario{
+    margin-top:2em ;
 }
 
 input::placeholder{
@@ -97,6 +100,7 @@ input.entrarBtn {
 }
 
 
+
 div > form#criar > input{
     padding: 17px;
     margin: 7px;
@@ -108,19 +112,22 @@ div > form#criar > input{
 }
 
 
-
 @media (max-width:400px) {
     section#login{
         width: 85%;
+        height: 500px;
     }
     
     div#imagem{
         margin: auto;
-        margin-bottom: 2.6em;
+        margin-bottom: 2.5em;
+    }
+    div > form#formulario{
+        margin-top:0.2em ;
     }
 
     div > form#formulario > input{
-        width: 85%;
+        width: 83%;
         padding: 14px;
         font-size: 12px;
     }
@@ -128,5 +135,9 @@ div > form#criar > input{
         margin: 0em 1em;
         margin-bottom: 4em;
     }
-   
+    
+    div > form#criar > input{
+        width: 81%;
+        
+    }
 }

@@ -20,7 +20,7 @@
 
         
 
-        <div class="hide">
+        <div >
         <form id="formulario">
 
             <input required autocomplete="username" type="text" placeholder="nome de usuario" autofocus> <br>
@@ -35,11 +35,15 @@
         </form>
         </div>
 
-        <div >
+        <div class="hide">
             <form id="criar">
                 <input type="text" placeholder="Nome de usuario">  <br>
+                <input type="mail" placeholder="Email"> 
                 <input type="password" placeholder="Senha"> <br>
                 <input type="password" placeholder="Confirmar senha">
+                <input type="tel" pattern="[0-9] {4} - [0-9] {4}" placeholder="+55 (xx) xxxxx-xxxx">
+                <input id="criarBtn" type="submit" value="Criar minha conta ">
+                <a href="#" onclick="criarConta()"> Voltar </a>
             </form>
 
 
